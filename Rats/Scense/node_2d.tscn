@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkksqhrhf1ca3"]
+
+[ext_resource type="Script" path="res://Scripts/Server Starter.gd" id="1_lwj35"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Server Starter" type="Button" parent="."]
+offset_left = 234.0
+offset_top = 235.0
+offset_right = 444.0
+offset_bottom = 363.0
+text = "Create Server Room"
+script = ExtResource("1_lwj35")
+
+[node name="Connect" type="Button" parent="."]
+offset_left = 716.0
+offset_top = 227.0
+offset_right = 888.0
+offset_bottom = 346.0
+text = "Join Server"
+
+[connection signal="button_up" from="Server Starter" to="Server Starter" method="_on_button_up"]
